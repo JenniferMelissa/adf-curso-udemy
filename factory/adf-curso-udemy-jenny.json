@@ -1,0 +1,9 @@
+{
+	"name": "adf-curso-udemy-jenny",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "278590d2-8bb0-473f-aa35-e5aaaa506e04",
+		"tenantId": "d152fe83-fcc5-4357-b99d-97b04ac064c3"
+	}
+}

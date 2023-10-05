@@ -1,0 +1,6 @@
+{
+	"name": "ir-self-hosted-azure",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

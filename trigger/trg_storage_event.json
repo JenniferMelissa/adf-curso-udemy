@@ -1,0 +1,28 @@
+{
+	"name": "trg_storage_event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingest_product",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"tbName": "Product"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/stage/blobs/events",
+			"blobPathEndsWith": "product.txt",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/fe58ae02-abc4-44f8-9b43-c069a5b21129/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/adlscursoudemy",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
